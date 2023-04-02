@@ -35,6 +35,8 @@ cask 'microsoft-powerpoint'
 cask 'notion'
 cask 'visual-studio-code'
 cask 'DamascenoRafael/tap/reminders-menubar'
+cask 'webex'
+cask 'zoom'
 
 mas 'Adblock Plus', id: 1432731683
 mas 'Bitwarden', id: 1352778147
