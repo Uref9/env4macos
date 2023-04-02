@@ -4,29 +4,37 @@ brew 'python'
 brew 'pyenv'
 brew 'rustup-init'
 
+# for Bitwarden V2 (Alfred Workflow)
+brew 'bitwarden-cli'
+
+# for Quick translate (Alfred Workflow)
+brew translate-shell
+brew jq
+brew coreutils
+brew curl
+
 cask 'alfred'
+cask 'alt-tab'
 cask 'bettertouchtool'
 cask 'cmd-eikana'
-cask 'alt-tab'
-cask 'fluor'
-cask 'shifty'
-cask 'utm'
-cask 'DamascenoRafael/tap/reminders-menubar'
-cask 'iina'
-cask 'notion'
-cask 'pdf-expert'
-cask 'iterm2'
-cask 'google-chrome'
+cask 'dropbox'
 cask 'firefox'
+cask 'fluor'
+cask 'google-chrome'
+cask 'onedrive'
+cask 'iterm2'
+cask 'iina'
+cask 'shifty'
+cask 'slack'
+cask 'pdf-expert'
 cask 'microsoft-auto-update'
 cask 'microsoft-word'
 cask 'microsoft-excel'
 cask 'microsoft-outlook'
 cask 'microsoft-powerpoint'
-cask 'onedrive'
-cask 'slack'
+cask 'notion'
 cask 'visual-studio-code'
-cask ''
+cask 'DamascenoRafael/tap/reminders-menubar'
 
 mas 'Adblock Plus', id: 1432731683
 mas 'Bitwarden', id: 1352778147
@@ -39,7 +47,6 @@ mas 'LINE', id: 539883307
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
 mas 'The Unarchiver', id: 425424353
-# mas 'Xcode', id: 497799835
 mas '辞書 by 物書堂', id: 1380563956
 
 # tap "heroku/brew"
