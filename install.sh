@@ -78,9 +78,12 @@ chmod 755 ./vscode/install.sh
 chmod 755 ./xcode/install.sh
 ./xcode/install.sh
 
+# remove localized directory name
+# rm ~/Applications/.localized ~/Documents/.localized ~/Downloads/.localized ~/Desktop/.localized ~/Public/.localized ~/Pictures/.localized ~/Music/.localized ~/Movies/.localized ~/Library/.localized
 
-
-
+# Office365 template
+# cp ./office365/templates/ 
+#   /Users/yuu/Library/Group\ Containers/UBF8T346G9.Office/User\ Content.localized/Templates.localized/
 
 
 
