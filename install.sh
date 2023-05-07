@@ -82,8 +82,8 @@ chmod 755 ./xcode/install.sh
 # rm ~/Applications/.localized ~/Documents/.localized ~/Downloads/.localized ~/Desktop/.localized ~/Public/.localized ~/Pictures/.localized ~/Music/.localized ~/Movies/.localized ~/Library/.localized
 
 # Office365 template
-# cp ./office365/templates/ 
-#   /Users/yuu/Library/Group\ Containers/UBF8T346G9.Office/User\ Content.localized/Templates.localized/
+# cp -r ./office365/User\ Content.localized/
+#   /Users/yuu/Library/Group\ Containers/UBF8T346G9.Office/User\ Content.localized/
 
 
 
