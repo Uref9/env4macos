@@ -16,16 +16,18 @@ sudo xattr -dr com.apple.quarantine /Applications/BetterTouchTool.app
 open /Applications/BetterTouchTool.app
 sudo xattr -dr com.apple.quarantine /Applications/Bitwarden.app
 open /Applications/Bitwarden.app
+sudo xattr -dr com.apple.quarantine /Applications/Docker.app
+open /Applications/Docker.app
 sudo xattr -dr com.apple.quarantine /Applications/Dropbox.app
 open /Applications/Dropbox.app
 sudo xattr -dr com.apple.quarantine /Applications/Firefox.app
 open /Applications/Firefox.app
-sudo xattr -dr com.apple.quarantine /Applications/Fluor.app
-open /Applications/Fluor.app
 sudo xattr -dr com.apple.quarantine /Applications/Google\ Chrome.app
 open /Applications/Google\ Chrome.app
 sudo xattr -dr com.apple.quarantine /Applications/IINA.app
 open /Applications/IINA.app
+sudo xattr -dr com.apple.quarantine /Applications/karabiner-elements.app
+open /Applications/karabiner-elements.app
 sudo xattr -dr com.apple.quarantine /Applications/Microsoft\ Excel.app
 open /Applications/Microsoft\ Excel.app
 sudo xattr -dr com.apple.quarantine /Applications/Microsoft\ Outlook.app

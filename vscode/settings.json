@@ -1,4 +1,43 @@
-{
+{   
+    // ctrl+k
+    "macros": {
+        "cutLines": [
+            "cursorEndSelect",
+            "editor.action.clipboardCutAction"
+        ]
+    },
+    
+    // powerlevel10k
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    
+    // coding
+    // "editor.suggest.showKeywords": false,
+    "editor.snippetSuggestions": "top",
+    
+    // ==========
+    // old
+    // ==========
+    "editor.suggestSelection": "first",
+    
+    // c cpp
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.cStandard": "c99",
+
+    "C_Cpp.suggestSnippets": false,
+    "C_Cpp.autocompleteAddParentheses": true,
+    "C_Cpp.debugShortcut": true,
+    
+    "C_Cpp.default.intelliSenseMode": "macos-clang-arm64",
+    // "C_Cpp.errorSquiggles": "Enabled",
+    // "C_Cpp.intelliSenseEngine": "Tag Parser",
+    // "C_Cpp.default.includePath": [
+    //     //インクルードライブラリ      
+    //     "/Users/yuu/Documents/Arduino/libraries",
+    //     "/Contents/Java/tools",
+    //     "/Contents/Java/libraries",
+    //     "/Contents/Java/hardware"
+    // ],
+    
     "files.autoSave": "onFocusChange",
     "editor.tabSize": 2,
     "workbench.iconTheme": "vscode-icons",
@@ -6,40 +45,25 @@
     "terminal.integrated.tabs.enabled": true,
     "git.autofetch": true,
     "vsicons.dontShowNewVersionMessage": true,
-    "C_Cpp.updateChannel": "Insiders",
     "debug.onTaskErrors": "showErrors",
-    "C_Cpp.suggestSnippets": false,
     "editor.minimap.enabled": false,
-    "files.associations": {
-        "*.asm": "asm-intel-x86-generic"
-    },
     "indentRainbow.ignoreLinePatterns": [
     
         "/[ \t]* [*]/g",
         "/[ \t]+[/]{2}/g"
     ],
-    "C_Cpp.errorSquiggles": "Enabled",
-    "C_Cpp.autocompleteAddParentheses": true,
-    "C_Cpp.default.intelliSenseMode": "macos-clang-arm64",
-    "editor.renderWhitespace": "all",
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "files.exclude": {
         "**/.classpath": true,
         "**/.project": true,
         "**/.settings": true,
         "**/.factorypath": true
     },
-    "C_Cpp.debugShortcut": true,
     "terminal.integrated.enableMultiLinePasteWarning": false,
+    "explorer.confirmDragAndDrop": false,
     "window.zoomLevel": 1,
-    "workbench.colorTheme": "Solarized Light",
-    "C_Cpp.intelliSenseEngine": "Tag Parser",
-    "C_Cpp.default.includePath": [
-        //インクルードライブラリ      
-        "/Users/yuu/Documents/Arduino/libraries",
-        "/Contents/Java/tools",
-        "/Contents/Java/libraries",
-        "/Contents/Java/hardware"
-    ]
+    "explorer.confirmDelete": false,
+    "workbench.colorTheme": "Default Light Modern",
+    "files.associations": {
+        "*.asm": "asm-intel-x86-generic"
+    },
 }

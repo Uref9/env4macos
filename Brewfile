@@ -17,13 +17,14 @@ cask 'alfred'
 cask 'alt-tab'
 cask 'bettertouchtool'
 cask 'cmd-eikana'
+cask 'docker'
 cask 'dropbox'
 cask 'firefox'
-cask 'fluor'
 cask 'google-chrome'
 cask 'onedrive'
 cask 'iterm2'
 cask 'iina'
+cask 'karabiner-elements'
 cask 'shifty'
 cask 'slack'
 cask 'pdf-expert'
@@ -41,15 +42,16 @@ cask 'zoom'
 mas 'Adblock Plus', id: 1432731683
 mas 'Bitwarden', id: 1352778147
 mas 'Dark Reader for Safari', id: 1438243180
-mas 'Focus', id: 777233759
 mas 'GoodNotes', id: 1444383602
 mas 'Keepa - Price Tracker', id: 1533805339
-mas 'Keynote', id: 409183694
 mas 'LINE', id: 539883307
-mas 'Numbers', id: 409203825
-mas 'Pages', id: 409201541
+# mas 'Keynote', id: 409183694
+# mas 'Numbers', id: 409203825
+# mas 'Pages', id: 409201541
 mas 'The Unarchiver', id: 425424353
 mas '辞書 by 物書堂', id: 1380563956
+
+
 
 # tap "heroku/brew"
 # tap "homebrew/bundle"
