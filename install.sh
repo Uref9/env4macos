@@ -7,9 +7,6 @@
 brew bundle --file=./Brewfile
 
 
-# zsh
-chmod 755 ./zsh/install.sh
-./zsh/install.sh
 
 # Rust
 chmod 755 ./rust/install.sh
@@ -34,6 +31,12 @@ cp -rf ./office365/User\ Content.localized/
 
 # karabiner-elements
 cp -f ./karabiner-elements/karabiner.json ~/.config/karabiner/karabiner.json
+
+
+
+# zsh (just before reboot)
+chmod 755 ./zsh/install.sh
+./zsh/install.sh
 
 # reboot shell
 exec $SHELL -l
