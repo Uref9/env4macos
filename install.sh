@@ -6,6 +6,38 @@
 # install via brew
 brew bundle --file=./Brewfile
 
+
+# zsh
+chmod 755 ./zsh/install.sh
+./zsh/install.sh
+
+# Rust
+chmod 755 ./rust/install.sh
+./rust/install.sh
+
+# vscode
+chmod 755 ./vscode/install.sh
+./vscode/install.sh
+
+# iterm
+
+# xcode
+chmod 755 ./xcode/install.sh
+./xcode/install.sh
+
+# remove localized directory name
+rm ~/Applications/.localized ~/Documents/.localized ~/Downloads/.localized ~/Desktop/.localized ~/Public/.localized ~/Pictures/.localized ~/Music/.localized ~/Movies/.localized ~/Library/.localized
+
+# Office365 template
+cp -r ./office365/User\ Content.localized/
+  /Users/yuu/Library/Group\ Containers/UBF8T346G9.Office/User\ Content.localized/
+
+# karabiner-elements
+cp ./karabiner-elements/karabiner.json ~/.config/karabiner/karabiner.json
+
+# reboot shell
+exec $SHELL -l
+
 # skip security popup
 
 sudo xattr -dr com.apple.quarantine /Applications/Alfred\ 5.app/
@@ -61,33 +93,3 @@ open /Applications/Bitwarden.app/
 open /Applications/GoodNotes.app/
 open /Applications/Focus.app/
 open /Applications/LINE.app/
-
-# zsh
-chmod 755 ./zsh/install.sh
-./zsh/install.sh
-
-# Rust
-chmod 755 ./rust/install.sh
-./rust/install.sh
-
-# vscode
-chmod 755 ./vscode/install.sh
-./vscode/install.sh
-
-# iterm
-
-# xcode
-chmod 755 ./xcode/install.sh
-./xcode/install.sh
-
-# remove localized directory name
-# rm ~/Applications/.localized ~/Documents/.localized ~/Downloads/.localized ~/Desktop/.localized ~/Public/.localized ~/Pictures/.localized ~/Music/.localized ~/Movies/.localized ~/Library/.localized
-
-# Office365 template
-# cp -r ./office365/User\ Content.localized/
-#   /Users/yuu/Library/Group\ Containers/UBF8T346G9.Office/User\ Content.localized/
-
-
-
-# reboot shell
-exec $SHELL -l

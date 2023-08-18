@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<a:fontScheme xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" name="ヒラギノ角ゴ ProN">
- <a:majorFont><a:latin typeface="Avenir Next"/><a:ea typeface="ヒラギノ角ゴ ProN"/><a:cs typeface=""/></a:majorFont>
- <a:minorFont><a:latin typeface="Avenir Next"/><a:ea typeface="ヒラギノ角ゴ ProN"/><a:cs typeface=""/></a:minorFont>
+<a:fontScheme xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" name="ヒラギノ角ゴ ProN_Avenir Next">
+ <a:majorFont><a:latin typeface="Avenir Next"/><a:ea typeface="ヒラギノ角ゴ ProN"/><a:cs typeface="ヒラギノ角ゴ ProN"/></a:majorFont>
+ <a:minorFont><a:latin typeface="Avenir Next"/><a:ea typeface="ヒラギノ角ゴ ProN"/><a:cs typeface="ヒラギノ角ゴ ProN"/></a:minorFont>
 </a:fontScheme>
