@@ -29,11 +29,11 @@ chmod 755 ./xcode/install.sh
 rm ~/Applications/.localized ~/Documents/.localized ~/Downloads/.localized ~/Desktop/.localized ~/Public/.localized ~/Pictures/.localized ~/Music/.localized ~/Movies/.localized ~/Library/.localized
 
 # Office365 template
-cp -r ./office365/User\ Content.localized/
+cp -rf ./office365/User\ Content.localized/
   /Users/yuu/Library/Group\ Containers/UBF8T346G9.Office/User\ Content.localized/
 
 # karabiner-elements
-cp ./karabiner-elements/karabiner.json ~/.config/karabiner/karabiner.json
+cp -f ./karabiner-elements/karabiner.json ~/.config/karabiner/karabiner.json
 
 # reboot shell
 exec $SHELL -l

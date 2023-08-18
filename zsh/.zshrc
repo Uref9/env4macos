@@ -68,3 +68,12 @@ zinit light zsh-users/zsh-syntax-highlighting
 ## 履歴補完
 zinit light zsh-users/zsh-autosuggestions
 
+# ----------------------------
+# alias
+# ----------------------------
+alias g="git"
+alias gb="git branch"
+alias gs="git status"
+alias gc="git commit"
+alias gsw="git switch"
+alias gco="git checkout"

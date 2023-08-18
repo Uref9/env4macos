@@ -12,4 +12,4 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/git/powerleve
 
 
 # copy my zsh settings
-cp ./zsh/.zshrc ~/.zshrc
+cp -f ./zsh/.zshrc ~/.zshrc

@@ -2,4 +2,4 @@
 
 
 # copy vscode settings
-cp ./vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+cp -f ./vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
