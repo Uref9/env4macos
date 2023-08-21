@@ -1,5 +1,5 @@
 #
-#
+## lab.
 # Jump server
 Host esax
 	Hostname sax.cpc.ait.kyushu-u.ac.jp
@@ -15,3 +15,8 @@ Host etitan1
 	Hostname titan1
 	User yuuo2
 	ProxyCommand ssh -W %h:%p esax
+## end of lab
+
+Host github.com
+  IdentityFile ~/.ssh/github
+  User git
