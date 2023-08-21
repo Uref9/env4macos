@@ -1,0 +1,17 @@
+#
+#
+# Jump server
+Host esax
+	Hostname sax.cpc.ait.kyushu-u.ac.jp
+	User yuuo
+	IdentityFile ~/.ssh/id_rsa
+
+Host ewoodblock
+	Hostname woodblock
+	User yuuo
+	ProxyCommand ssh -W %h:%p esax
+
+Host etitan1
+	Hostname titan1
+	User yuuo2
+	ProxyCommand ssh -W %h:%p esax
