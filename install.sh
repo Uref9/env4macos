@@ -23,15 +23,28 @@ chmod 755 ./xcode/install.sh
 ./xcode/install.sh
 
 # remove localized directory name
-rm ~/Applications/.localized ~/Documents/.localized ~/Downloads/.localized ~/Desktop/.localized ~/Public/.localized ~/Pictures/.localized ~/Music/.localized ~/Movies/.localized ~/Library/.localized
+rm ~/Applications/.localized \
+  ~/Documents/.localized \
+  ~/Downloads/.localized \
+  ~/Desktop/.localized \
+  ~/Public/.localized \
+  ~/Pictures/.localized \
+  ~/Music/.localized \
+  ~/Movies/.localized \
+  ~/Library/.localized
 
 # Office365 template
+mkdir -p ~/Library/Group\ Containers/UBF8T346G9.Office/User\ Content.localized
 cp -rf ./office365/User\ Content.localized/ \
   ~/Library/Group\ Containers/UBF8T346G9.Office/User\ Content.localized/
 
 # karabiner-elements
+mkdir -p ~/.config/karabiner  # if not exist, make dirctory.
 cp -f ./karabiner-elements/karabiner.json ~/.config/karabiner/karabiner.json
 
+# ssh
+mkdir -p ~/.ssh
+cp -f ./ssh/config ~/.ssh/config
 
 
 # zsh (just before reboot)
