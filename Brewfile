@@ -4,6 +4,7 @@ tap "homebrew/cask"
 brew "bitwarden-cli"
 brew "coreutils"
 brew "curl"
+brew "git"
 brew "icarus-verilog"
 brew "jq"
 brew "mas"
@@ -11,7 +12,6 @@ brew "php"
 brew "pyenv"
 brew "python@3.11"
 brew "rustup-init"
-brew "translate-shell"
 brew "zsh"
 cask "alfred"
 cask "alt-tab"
@@ -40,7 +40,6 @@ cask "pdf-expert"
 cask "reminders-menubar"
 cask "shifty"
 cask "slack"
-cask "steam"
 cask "visual-studio-code"
 cask "webex"
 cask "xquartz"
@@ -49,7 +48,9 @@ mas "Adblock Plus", id: 1432731683
 mas "Bitwarden", id: 1352778147
 mas "Dark Reader for Safari", id: 1438243180
 mas "Focus", id: 777233759
-mas "GoodNotes", id: 1444383602
+mas "GarageBand", id: 682658836
+mas "Goodnotes", id: 1444383602
+mas "iMovie", id: 408981434
 mas "Keepa - Price Tracker", id: 1533805339
 mas "Keynote", id: 409183694
 mas "LINE", id: 539883307
@@ -79,6 +80,7 @@ vscode "mshr-h.veriloghdl"
 vscode "oderwat.indent-rainbow"
 vscode "panicbit.cargo"
 vscode "pnp.polacode"
+vscode "redhat.java"
 vscode "rust-lang.rust-analyzer"
 vscode "serayuzgur.crates"
 vscode "sleistner.vscode-fileutils"

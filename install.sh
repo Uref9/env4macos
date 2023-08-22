@@ -46,6 +46,7 @@ cp -f ./karabiner-elements/karabiner.json ~/.config/karabiner/karabiner.json
 mkdir -p ~/.ssh
 cp -f ./ssh/config ~/.ssh/config
 
+
 ## ---
 # zsh (just before reboot)
 chmod 755 ./zsh/install.sh
