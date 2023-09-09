@@ -35,7 +35,7 @@ rm ~/Applications/.localized \
 
 # Office365 template (synbolic linc from Onedrive)
 mkdir -p ~/Library/Group\ Containers/UBF8T346G9.Office
-ln -s ~/Library/CloudStorage/OneDrive-KyushuUniversity/_mySync/User Content.localized \
+ln -s ~/Library/CloudStorage/OneDrive-KyushuUniversity/_mySync/User\ Content.localized \
       ~/Library/Group\ Containers/UBF8T346G9.Office/
 
 # karabiner-elements
