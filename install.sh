@@ -46,6 +46,8 @@ cp -f ./karabiner-elements/karabiner.json ~/.config/karabiner/karabiner.json
 mkdir -p ~/.ssh
 cp -f ./ssh/config ~/.ssh/config
 
+# defaults
+# defalts write -f ??
 
 ## ---
 # zsh (just before reboot)
