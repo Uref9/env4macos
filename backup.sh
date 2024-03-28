@@ -17,4 +17,4 @@ cp -f ~/.config/karabiner/karabiner.json ./karabiner-elements/karabiner.json
 cp -f ~/.ssh/config ./ssh/config
 
 # defaults
-defalts read > defaults/defaults_list
+defaults read > defaults/defaults_list
