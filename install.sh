@@ -1,4 +1,17 @@
-# !/bin/bash
+#!/bin/bash
+
+set -eE
+trap 'echo -e "\033[0;31m✖ エラー発生: コマンド失敗（行番号: $LINENO）\033[0m"' ERR
+trap 'echo -e "\033[0;32m🎉 正常終了しました\033[0m"' EXIT
+
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+NC='\033[0m'
+
+log() { echo -e "${BLUE}▶ $1${NC}"; }
+ok() { echo -e "${GREEN}✔ $1${NC}"; }
+
+log "install 開始"
 
 ### install ###
 
@@ -7,7 +20,10 @@
 
 # install via brew
 brew bundle --file=./homebrew/Brewfile
+ok "brew install 完了"
 
+
+log "setting copy"
 
 ### setting copy ###
 
@@ -19,18 +35,22 @@ brew bundle --file=./homebrew/Brewfile
 # vscode
 mkdir -p ~/Library/Application\ Support/Code/User
 cp -f ./vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ok "vscode 設定コピー"
 
 # karabiner-elements
 mkdir -p ~/.config/karabiner  # if not exist, make dirctory.
 cp -f ./karabiner-elements/karabiner.json ~/.config/karabiner/karabiner.json
+ok "karabiner 設定コピー"
 
 # ssh
 mkdir -p ~/.ssh
 cp -f ./ssh/config ~/.ssh/config
+ok "ssh 設定コピー"
 
 # defaults
 # defalts write -f ??
 
+log "localized 削除"
 # remove localized directory name
 rm ~/Applications/.localized \
   ~/Documents/.localized \
@@ -41,18 +61,24 @@ rm ~/Applications/.localized \
   ~/Music/.localized \
   ~/Movies/.localized \
   ~/Library/.localized
+ok "localized 削除完了"
 
 
+log "Rust install"
 # Rust
-rustup-init
+rustup-init -y
+ok "Rust install 完了"
 
+log "Xcode install"
 # xcode
-mas install 497799835 // Xcode
+mas install 497799835
 
 sudo xcodebuild -license accept
 open /Applications/Xcode.app
+ok "Xcode setup 完了"
 
 ## ---
+log "zsh setup"
 # zsh (just before reboot)
 # - chsh
 # - install zinit
@@ -66,12 +92,16 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/git/powerleve
 
 # copy my zsh settings
 cp -f ./zsh/.zshrc ~/.zshrc
+ok "zsh 設定完了"
 
+log "shell 再起動"
 # reboot shell
 exec $SHELL -l
 ## ---
 
 
-skip security popup
-sudo xattr -dr com.apple.quarantine /Applications/karabiner-elements.app
-open /Applications/karabiner-elements.app
+# log "karabiner 起動"
+# skip security popup
+# sudo xattr -dr com.apple.quarantine /Applications/karabiner-elements.app
+# open /Applications/karabiner-elements.app
+# ok "karabiner 起動完了"
