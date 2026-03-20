@@ -1,42 +1,24 @@
 # !/bin/bash
 
+### install ###
+
 # install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # install via brew
-brew bundle --file=./Brewfile
+brew bundle --file=./homebrew/Brewfile
 
 
+### setting copy ###
 
-# Rust
-chmod 755 ./rust/install.sh
-./rust/install.sh
+# # Office365 template (synbolic linc from Onedrive)
+# mkdir -p ~/Library/Group\ Containers/UBF8T346G9.Office
+# ln -s ~/Library/CloudStorage/OneDrive-KyushuUniversity/_mySync/User\ Content.localized \
+#       ~/Library/Group\ Containers/UBF8T346G9.Office/
 
 # vscode
-chmod 755 ./vscode/install.sh
-./vscode/install.sh
-
-# iterm
-
-# xcode
-chmod 755 ./xcode/install.sh
-./xcode/install.sh
-
-# remove localized directory name
-rm ~/Applications/.localized \
-  ~/Documents/.localized \
-  ~/Downloads/.localized \
-  ~/Desktop/.localized \
-  ~/Public/.localized \
-  ~/Pictures/.localized \
-  ~/Music/.localized \
-  ~/Movies/.localized \
-  ~/Library/.localized
-
-# Office365 template (synbolic linc from Onedrive)
-mkdir -p ~/Library/Group\ Containers/UBF8T346G9.Office
-ln -s ~/Library/CloudStorage/OneDrive-KyushuUniversity/_mySync/User\ Content.localized \
-      ~/Library/Group\ Containers/UBF8T346G9.Office/
+mkdir -p ~/Library/Application\ Support/Code/User
+cp -f ./vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 
 # karabiner-elements
 mkdir -p ~/.config/karabiner  # if not exist, make dirctory.
@@ -49,16 +31,47 @@ cp -f ./ssh/config ~/.ssh/config
 # defaults
 # defalts write -f ??
 
+# remove localized directory name
+rm ~/Applications/.localized \
+  ~/Documents/.localized \
+  ~/Downloads/.localized \
+  ~/Desktop/.localized \
+  ~/Public/.localized \
+  ~/Pictures/.localized \
+  ~/Music/.localized \
+  ~/Movies/.localized \
+  ~/Library/.localized
+
+
+# Rust
+rustup-init
+
+# xcode
+mas install 497799835 // Xcode
+
+sudo xcodebuild -license accept
+open /Applications/Xcode.app
+
 ## ---
 # zsh (just before reboot)
-chmod 755 ./zsh/install.sh
-./zsh/install.sh
+# - chsh
+# - install zinit
+# - powerlevel10k
+# - copy my zsh settings
+chsh -s /opt/homebrew/bin/zsh
+
+bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/git/powerlevel10k
+
+# copy my zsh settings
+cp -f ./zsh/.zshrc ~/.zshrc
 
 # reboot shell
 exec $SHELL -l
 ## ---
 
 
-# skip security popup
-# sudo xattr -dr com.apple.quarantine /Applications/karabiner-elements.app
-# open /Applications/karabiner-elements.app
+skip security popup
+sudo xattr -dr com.apple.quarantine /Applications/karabiner-elements.app
+open /Applications/karabiner-elements.app
