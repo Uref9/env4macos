@@ -27,6 +27,13 @@ code --list-extensions > ./vscode/vscode-extensions.txt
 cp -f "$HOME/Library/Application Support/Code/User/settings.json" ./vscode/settings.json || true
 ok "vscode 完了"
 
+log "cursor"
+# vscode
+mkdir -p ./cursor
+cp -f "$HOME/Library/Application Support/Cursor/User/settings.json" ./cursor/settings.json || true
+cp -f "$HOME/Library/Application Support/Cursor/User/keybindings.json" ./cursor/keybindings.json || true
+ok "cursor 完了"
+
 log "zsh"
 # zsh
 mkdir -p ./zsh

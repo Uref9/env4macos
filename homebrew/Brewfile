@@ -21,6 +21,7 @@ cask "appcleaner"
 cask "arc"
 cask "basecamp"
 cask "bettertouchtool"
+cask "claude"
 cask "deepl"
 cask "docker-desktop"
 cask "dropbox"
@@ -50,12 +51,26 @@ cask "webex"
 cask "whisky"
 cask "xquartz"
 cask "zoom"
+mas "AdBlock", id: 1402042596
+mas "Adblock Plus", id: 1432731683
+mas "AdBlock Pro", id: 1018301773
+mas "Be Focused", id: 973134470
+mas "Bitwarden", id: 1352778147
+mas "Dark Reader for Safari", id: 1438243180
+mas "Keepa - Price Tracker", id: 1533805339
+mas "Keynote", id: 409183694
+mas "LINE", id: 539883307
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "PocketTube", id: 1533703891
+mas "The Unarchiver", id: 425424353
+mas "Video Speed Controller", id: 1588368612
+mas "辞書 by 物書堂", id: 1380563956
 vscode "13xforever.language-x86-64-assembly"
 vscode "cschlosser.doxdocgen"
 vscode "dan-c-underwood.arm"
 vscode "eamodio.gitlens"
 vscode "geddski.macros"
-vscode "github.copilot"
 vscode "github.copilot-chat"
 vscode "jeff-hykin.better-cpp-syntax"
 vscode "mosapride.zenkaku"
@@ -88,3 +103,4 @@ vscode "visualstudioexptteam.intellicode-api-usage-examples"
 vscode "visualstudioexptteam.vscodeintellicode"
 vscode "vscode-icons-team.vscode-icons"
 vscode "wmaurer.change-case"
+cargo "cargo-binutils"

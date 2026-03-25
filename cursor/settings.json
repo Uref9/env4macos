@@ -1,0 +1,51 @@
+{
+    // for ctrl-Y : yank ctrl-k line
+    "macros": {
+        "cutLines": [
+            "cursorEndSelect",
+            "editor.action.clipboardCutAction"
+        ]
+    },
+    // "[rust]": {
+    //     "editor.tabSize": 4,
+    //     "editor.insertSpaces": true,
+    //     "editor.formatOnSave": true
+    // },   
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "window.zoomLevel": 1,
+    "remote.SSH.remotePlatform": {
+        "github.com": "macOS"
+    },
+
+    "workbench.colorTheme": "Solarized Dark",
+    "workbench.preferredDarkColorTheme": "Solarized Dark",
+    "workbench.preferredLightColorTheme": "Solarized Light",
+    "window.autoDetectColorScheme": true,
+    "window.newWindowProfile": "既定",
+    
+    "files.autoSave": "onFocusChange",
+    // "editor.tabSize": 2,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.startupEditor": "none",
+    "terminal.integrated.tabs.enabled": true,
+    "git.autofetch": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "debug.onTaskErrors": "showErrors",
+    "editor.minimap.enabled": false,
+    "indentRainbow.ignoreLinePatterns": [
+        "/[ \t]* [*]/g",
+        "/[ \t]+[/]{2}/g"
+    ],
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    // "terminal.integrated.enableMultiLinePasteWarning": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+
+    
+
+}

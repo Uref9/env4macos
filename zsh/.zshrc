@@ -71,9 +71,20 @@ zinit light zsh-users/zsh-autosuggestions
 # ----------------------------
 # alias
 # ----------------------------
+# git
 alias g="git"
 alias gb="git branch"
 alias gs="git status"
 alias gc="git commit"
+alias ga="git add"
+alias gp="git push"
 alias gsw="git switch"
 alias gco="git checkout"
+# cargo (Rust)
+alias c="cargo"
+alias cc="cargo check"
+alias ct="cargo test"
+alias cb="cargo build"
+alias cr="cargo run"
+alias cf="cargo fmt"
+alias ccl="cargo clippy"

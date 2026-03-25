@@ -37,6 +37,12 @@ mkdir -p ~/Library/Application\ Support/Code/User
 cp -f ./vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 ok "vscode 設定コピー"
 
+# cursorl
+mkdir -p ~/Library/Application\ Support/Cursor/User
+cp -f ./cursor/settings.json ~/Library/Application\ Support/Cursor/User/settings.json
+cp -f ./cursor/keybindings.json ~/Library/Application\ Support/Cursor/User/keybindings.json
+ok "cursor 設定コピー"
+
 # karabiner-elements
 mkdir -p ~/.config/karabiner  # if not exist, make dirctory.
 cp -f ./karabiner-elements/karabiner.json ~/.config/karabiner/karabiner.json
