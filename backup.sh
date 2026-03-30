@@ -42,8 +42,8 @@ ok "zsh 完了"
 
 log "karabiner"
 # karabiner-elements
-mkdir -p ./karabiner-elements
-cp -f "$HOME/.config/karabiner/karabiner.json" ./karabiner-elements/karabiner.json || true
+mkdir -p ./.config
+cp -f "$HOME/.config/karabiner" ./.config/karabiner || true
 ok "karabiner 完了"
 
 log "ssh"
