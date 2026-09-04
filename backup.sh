@@ -1,7 +1,6 @@
 #!/bin/bash
 
-set -e
-set -eE
+set -E
 trap 'echo -e "\033[0;31m✖ エラー発生: コマンド失敗（行番号: $LINENO）\033[0m"' ERR
 exec > >(tee backup.log) 2>&1
 
@@ -43,7 +42,7 @@ ok "zsh 完了"
 log "karabiner"
 # karabiner-elements
 mkdir -p ./.config
-cp -f "$HOME/.config/karabiner" ./.config/karabiner || true
+cp -Rf "$HOME/.config/karabiner" ./.config/karabiner || true
 ok "karabiner 完了"
 
 log "ssh"
