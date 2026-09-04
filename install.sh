@@ -1,8 +1,9 @@
 #!/bin/bash
 
-set -eE
-trap 'echo -e "\033[0;31m✖ エラー発生: コマンド失敗（行番号: $LINENO）\033[0m"' ERR
-trap 'echo -e "\033[0;32m🎉 正常終了しました\033[0m"' EXIT
+set -E
+had_error=0
+trap 'had_error=1; echo -e "\033[0;31m✖ エラー発生: コマンド失敗（行番号: $LINENO）\033[0m"' ERR
+trap 'if [ "$had_error" -eq 0 ]; then echo -e "\033[0;32m🎉 正常終了しました\033[0m"; else echo -e "\033[0;33m⚠ エラーがありましたが処理を継続して終了しました\033[0m"; fi' EXIT
 
 GREEN='\033[0;32m'
 BLUE='\033[0;34m'
