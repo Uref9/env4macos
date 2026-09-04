@@ -24,11 +24,17 @@
   },
   {
     "key": "shift+f1",
-    "command": "workbench.action.showCommands"
+    "command": "workbench.action.showCommands",
+    "when": "terminalFocus || editorTextFocus || !terminalFocus"
   },
   {
     "key": "f1",
-    "command": "workbench.action.quickOpen"
+    "command": "workbench.action.quickOpen",
+    "when": "editorTextFocus || terminalFocus"
+  },
+  {
+    "key": "f1",
+    "command": "-workbench.action.showCommands"
   },
   {
     "key": "cmd+p",
@@ -52,18 +58,18 @@
     "when": "textInputFocus && !editorReadonly"
   },
   {
-    "key": "enter",
-    "command": "-acceptSelectedSuggestion",
-    "when": "acceptSuggestionOnEnter && suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
-  },
-  {
-    "key": "alt+cmd+s",
-    "command": "workbench.action.toggleUnifiedSidebarFromKeyboard",
-    "when": "cursor.agentIdeUnification.enabled == true && !isAuxiliaryWindowFocusedContext"
-  },
-  {
     "key": "ctrl+;",
     "command": "workbench.action.focusActiveEditorGroup"
+  },
+  {
+    "key": "cmd+k cmd+o",
+    "command": "aipopup.action.modal.generate",
+    "when": "editorFocus && !composerBarIsVisible"
+  },
+  {
+    "key": "cmd+k",
+    "command": "-aipopup.action.modal.generate",
+    "when": "editorFocus && !composerBarIsVisible"
   },
 
   

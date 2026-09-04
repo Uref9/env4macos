@@ -6,17 +6,12 @@
             "editor.action.clipboardCutAction"
         ]
     },
-    // "[rust]": {
-    //     "editor.tabSize": 4,
-    //     "editor.insertSpaces": true,
-    //     "editor.formatOnSave": true
-    // },   
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "window.zoomLevel": 1,
     "remote.SSH.remotePlatform": {
         "github.com": "macOS"
     },
-
+    
     "workbench.colorTheme": "Solarized Dark",
     "workbench.preferredDarkColorTheme": "Solarized Dark",
     "workbench.preferredLightColorTheme": "Solarized Light",
@@ -45,7 +40,10 @@
     // "terminal.integrated.enableMultiLinePasteWarning": false,
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
-
     
-
+    /// Rust ///
+    "[rust]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    },
 }

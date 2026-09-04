@@ -1,61 +1,111 @@
 tap "damascenorafael/tap"
 tap "homebrew/bundle"
-tap "sikarugir-app/sikarugir"
+tap "sikarugir-app/sikarugir", "https://github.com/Sikarugir-App/homebrew-sikarugir"
+# Secure and free password manager for all of your devices
 brew "bitwarden-cli"
+# GNU File, Shell, and Text utilities
 brew "coreutils"
+# Emacs dependency management
 brew "cask"
+# Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
+# Verilog simulation and synthesis tool
 brew "icarus-verilog"
+# Lightweight and flexible command-line JSON processor
 brew "jq"
+# Mac App Store command-line interface
 brew "mas"
+# General-purpose scripting language
 brew "php"
+# Python version management
 brew "pyenv"
+# Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
+# Generic machine emulator and virtualizer
 brew "qemu"
+# Rust toolchain installer
 brew "rustup"
+# Command-line translator using Google Translate and more
 brew "translate-shell"
+# UNIX shell (command interpreter)
 brew "zsh"
+# Application launcher and productivity software
 cask "alfred"
+# Enable Windows-like alt-tab
 cask "alt-tab"
+# Application uninstaller
 cask "appcleaner"
+# Chromium based browser
 cask "arc"
+# All-In-One Toolkit for Working Remotely
 cask "basecamp"
+# Tool to customise input devices and automate computer systems
 cask "bettertouchtool"
+# Anthropic's official Claude AI desktop app
 cask "claude"
+# AI-powered translator
 cask "deepl"
+# App to build and share containerised applications and microservices
 cask "docker-desktop"
+# Client for the Dropbox cloud storage service
 cask "dropbox"
+# Web browser
 cask "firefox"
+# Desktop client for GitHub repositories
 cask "github"
+# Web browser
 cask "google-chrome"
+# Free and open-source media player
 cask "iina"
+# Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Keyboard customiser
 cask "karabiner-elements"
+# Provides updates to various Microsoft products
 cask "microsoft-auto-update"
+# Multi-platform web browser
 cask "microsoft-edge"
+# Spreadsheet software
 cask "microsoft-excel"
+# Email client
 cask "microsoft-outlook"
+# Presentation software
 cask "microsoft-powerpoint"
+# Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
+# Word processor
 cask "microsoft-word"
+# App to write, plan, collaborate, and get organised
 cask "notion"
+# Cloud storage client
 cask "onedrive"
+# PDF reader, editor and annotator
 cask "pdf-expert"
+# Simple menu bar app to view and interact with reminders
 cask "reminders-menubar"
+# Menu bar app that provides more control over Night Shift
 cask "shifty"
-cask "sikarugir-app/sikarugir/sikarugir"
+cask "sikarugir"
+# Team communication and collaboration software
 cask "slack"
+# Video game digital distribution service
 cask "steam"
+# Open-source code editor
 cask "visual-studio-code"
+# Video communication and virtual meeting platform
 cask "webex"
+# Wine wrapper built with SwiftUI
 cask "whisky"
+# Open-source version of the X.Org X Window System
 cask "xquartz"
+# Video communication and virtual meeting platform
 cask "zoom"
 mas "AdBlock", id: 1402042596
 mas "Adblock Plus", id: 1432731683
 mas "AdBlock Pro", id: 1018301773
 mas "Be Focused", id: 973134470
 mas "Bitwarden", id: 1352778147
+mas "CleanMyMac", id: 1339170533
 mas "Dark Reader for Safari", id: 1438243180
 mas "Keepa - Price Tracker", id: 1533805339
 mas "Keynote", id: 409183694
@@ -104,3 +154,4 @@ vscode "visualstudioexptteam.vscodeintellicode"
 vscode "vscode-icons-team.vscode-icons"
 vscode "wmaurer.change-case"
 cargo "cargo-binutils"
+cargo "cargo-edit"

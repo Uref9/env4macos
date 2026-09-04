@@ -37,7 +37,7 @@ mkdir -p ~/Library/Application\ Support/Code/User
 cp -f ./vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 ok "vscode 設定コピー"
 
-# cursorl
+# cursor
 mkdir -p ~/Library/Application\ Support/Cursor/User
 cp -f ./cursor/settings.json ~/Library/Application\ Support/Cursor/User/settings.json
 cp -f ./cursor/keybindings.json ~/Library/Application\ Support/Cursor/User/keybindings.json
