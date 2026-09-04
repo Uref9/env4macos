@@ -59,7 +59,11 @@ ok "ssh 設定コピー"
 
 log "localized 削除"
 # remove localized directory name
-rm ~/Applications/.localized \
+rm -f /Applications/.localized \
+  /Users/.localized \
+  /Library/.localized \
+  /System/.localized \
+  /Volumes/.localized \
   ~/Documents/.localized \
   ~/Downloads/.localized \
   ~/Desktop/.localized \
@@ -97,6 +101,20 @@ chsh -s /opt/homebrew/bin/zsh
 bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/git/powerlevel10k
+
+log "MesloLGS NF install"
+FONT_DIR="$HOME/Library/Fonts"
+mkdir -p "$FONT_DIR"
+MESLO_BASE="https://github.com/romkatv/powerlevel10k-media/raw/master"
+for font in \
+  "MesloLGS NF Regular.ttf" \
+  "MesloLGS NF Bold.ttf" \
+  "MesloLGS NF Italic.ttf" \
+  "MesloLGS NF Bold Italic.ttf"
+do
+  curl -fsSL -o "$FONT_DIR/$font" "${MESLO_BASE}/${font// /%20}"
+done
+ok "MesloLGS NF インストール完了"
 
 # copy my zsh settings
 cp -f ./zsh/.zshrc ~/.zshrc
