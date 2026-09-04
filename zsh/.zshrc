@@ -6,6 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 export PATH="/opt/homebrew/sbin:/opt/homebrew/bin:$PATH"
+export PATH="$(brew --prefix rustup)/bin:$PATH"
 
 # export PATH="/Users/$USER/workspace/bin:$PATH"
 # export PATH="$(brew --prefix openssl@1.1)/bin:$PATH"

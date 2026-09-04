@@ -72,8 +72,9 @@ ok "localized 削除完了"
 
 
 log "Rust install"
-# Rust
-rustup-init -y
+# Homebrew rustup is keg-only and no longer provides rustup-init
+export PATH="$(brew --prefix rustup)/bin:$PATH"
+rustup default stable
 ok "Rust install 完了"
 
 log "Xcode install"
